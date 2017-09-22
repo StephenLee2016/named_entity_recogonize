@@ -60,3 +60,7 @@
 > 2017/09/22 新增业务实体
 
 新增业务实体，表示为OTH
+
+
+[1]:https://arxiv.org/pdf/1508.01991v1.pdf
+[2]:http://aclweb.org/anthology/N16-1030
