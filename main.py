@@ -24,7 +24,7 @@ parser.add_argument('--pretrain_embedding', type=str, default='random', help='us
 parser.add_argument('--embedding_dim', type=int, default=300, help='random init char embedding_dim')
 parser.add_argument('--shuffle', type=str2bool, default=True, help='shuffle training data before each epoch')
 parser.add_argument('--mode', type=str, default='demo', help='train/test/demo')
-parser.add_argument('--demo_model', type=str, default='1506044282'
+parser.add_argument('--demo_model', type=str, default='1506069512'
                                                       '', help='model for test and demo')
 args = parser.parse_args()
 
@@ -135,6 +135,7 @@ elif args.mode == 'demo':
     with tf.Session() as sess:
         print('============= demo =============')
         saver.restore(sess, ckpt_file)
+
         while (1):
             print('Please input your sentence:')
             demo_sent = input()

@@ -109,7 +109,7 @@ class BiLSTM_CRF(object):
             output = tf.reshape(output, [-1, 2*self.hidden_dim])
             pred = tf.matmul(output, W) + b
 
-            self.logits = tf.reshape(pred, [-1, s[1], self.num_tags])
+            self.logits = tf.reshape(pred, [-1, s[1], self.num_tags],name='logits')
 
 
     def loss_op(self):

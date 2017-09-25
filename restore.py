@@ -74,7 +74,7 @@ def predict_one_batch():
 
 def main():
 
-    vocab = read_dictionary(os.path.join('./data_path', 'word2id.pkl'))
+    vocab = read_dictionary(os.path.join('./data_path', 'word2id1.pkl'))
 
     with tf.Session() as sess:
 
@@ -84,7 +84,7 @@ def main():
         output_key = 'output'
         output_key2 = 'transition_param'
 
-        meta_graph_def = tf.saved_model.loader.load(sess, ['test_saved_model'], 'E:\\NER_LSTM\\model\\1506064339')
+        meta_graph_def = tf.saved_model.loader.load(sess, ['test_saved_model'], 'E:\\NER_LSTM\\model\\1506177919')
         # 从meta_graph_def中取出SignatureDef对象
         signature = meta_graph_def.signature_def
 
