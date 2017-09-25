@@ -74,7 +74,7 @@ def predict_one_batch():
 
 def main():
 
-    vocab = read_dictionary(os.path.join('./data_path', 'word2id1.pkl'))
+    vocab = read_dictionary(os.path.join('./data_path',  'word2id1.pkl'))
 
     with tf.Session() as sess:
 
