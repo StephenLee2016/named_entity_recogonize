@@ -62,5 +62,11 @@
 新增业务实体，表示为OTH
 
 
+---
+
+> 2017/11/08 新增了flask的访问接口
+
+![result](result.png)
+
 [1]:https://arxiv.org/pdf/1508.01991v1.pdf
 [2]:http://aclweb.org/anthology/N16-1030
